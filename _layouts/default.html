@@ -2,24 +2,45 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   
   <head>
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js">
-    </script>
+    <title>
+      {% if page.lang == "ja" %}
+        前川拓海
+      {% else %}
+        Takumi Maegawa
+      {% endif %}
+    </title>
+    <script src="{{ "/assets/js/mathjax-config.js" | relative_url }}"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   </head>
   {%- include head.html -%}
 
   <body>
-
+    
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
+
+        {% if page.comments %}
+        <div id="comments">
+          <script src="https://utteranc.es/client.js"
+                  repo="your-username/your-repo"
+                  issue-term="pathname"
+                  label="💬 コメント"
+                  theme="github-light"
+                  crossorigin="anonymous"
+                  async>
+          </script>
+        </div>
+        {% endif %}
       </div>
     </main>
 
     {%- include footer.html -%}
 
   </body>
+
 
 </html>

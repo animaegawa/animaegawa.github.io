@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CD Test</title>
+  <script>
+    window.MathJax = {
+      tex: {
+        displayMath: [['\\[', '\\]']],
+        macros: {
+          o: ["{\\operatorname{#1}}", 1],
+          C: ["{\\mathsf{#1}}", 1]
+        }
+        // ✅ ここに "packages" は書かないこと！
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+<p>テスト：CD環境を表示</p>
+
+\[
+\begin{CD}
+N @>>> G \\
+@VVV @VVfV \\
+1 @>>> K
+\end{CD}
+\]
+
+<p>上の図は CD で書かれています。</p>
+
+</body>
+</html>
