@@ -16,7 +16,7 @@ keywords: ["math", "数学"]
 
 ---
 
-I am a PhD student based in mathematics in Tokyo, working on homotopy theory.
+I am a PhD student in mathematics based in Tokyo, working on homotopy theory.
 
 
 - [日本語版](ja/)
