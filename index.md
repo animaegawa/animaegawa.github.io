@@ -18,5 +18,16 @@ keywords: ["math", "数学"]
 
 I am a PhD student in mathematics based in Tokyo, working on homotopy theory.
 
+### Education
+- *2023 - Present*, **Ph.D. Student in Mathematics**, Graduate School of Mathematical Sciences, The University of Tokyo                               
+  Supervisor: Shane Kelly                       
+  Research in homotopy theory, ∞-categories, and six-functor formalism.
 
-- [日本語版](ja/)
+- *2021 - 2023*, **M.Sc. in Mathematics**, Graduate School of Mathematical Sciences, The University of Tokyo                              
+  Supervisor: Mikio Furuta
+
+- *2017 - 2021*, **B.Sc. in Mathematics**, Department of Mathematics, Waseda University  
+  
+
+---
+[日本語版](ja/)
