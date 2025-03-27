@@ -4,7 +4,7 @@ title: CDテスト
 ---
 
 <div class="definition">
-<p><b>定義：</b>群の拡大は次の可換図式で与えられる：</p>
+<p><b>定義：</b>群の拡大は次のcartesian図式で与えられる：</p>
 
 \[
 \begin{CD}

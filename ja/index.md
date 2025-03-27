@@ -15,4 +15,9 @@ keywords: ["math", "数学", "前川拓海"]
 [English version](/)
 
 - [無限圏日本語ノート1](../blog/oo-cat)
-- [](../blog/)
+<details><summary>その他数学関連のノート</summary>
+<ul>
+<li><a href="../blog/ext">群の拡大がコホモロジカルであることの証明</a></li>
+<li></li>
+</ul>
+</details>
