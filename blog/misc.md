@@ -20,7 +20,7 @@ layout: post
 <li></li>
 
 
-<li> 統治二論 </li>
+<li> <a href="Locke">統治二論</a> </li>
 
 <li> 『家父長制と資本制』 </li>
 </ul>
