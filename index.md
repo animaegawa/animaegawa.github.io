@@ -3,6 +3,7 @@ layout: home
 title: Welcome
 permalink: /
 lang: en
+keywords: ["math", "数学"]
 ---
 
 ![photo](assets/photo.jpg){:style="max-width: 200px; border-radius: 50%;"}

@@ -3,6 +3,7 @@ layout: home
 title: "Japanese"
 lang: ja
 permalink: /ja/
+keywords: ["math", "数学", "前川拓海"]
 ---
 
 これは日本語版ホームページです。
