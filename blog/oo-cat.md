@@ -50,7 +50,11 @@ lang: ja
 ### Disclaimer
 
 すべての証明は，[Kerodon](https://kerodon.net)
-または *Higher Topos Theory* にありますが，今のところ，適切な参照を作ってない程には怠惰です．
+または *Higher Topos Theory*[<sup>2</sup>](#ref0) にありますが，今のところ，適切な参照を作ってない程には怠惰です．
+
+<div id="ref0" class="footnote-section">
+<sup><a>2</a></sup> Jacob Lurie, <i>Higher topos theory</i>, Annals of Mathematics Studies, vol. 170, Princeton University Press, Princeton, NJ, 2009, Updated copy available at <a href="https://www.math.ias.edu/~lurie/papers/HTT.pdf">https://www.math.ias.edu/~lurie/papers/HTT.pdf</a>. MR 2522659
+</div>
 
 このポストは，過去の勉強ノートのごく一部を文字起こししたものなので，いつか続編も書くつもりでいます．
 
