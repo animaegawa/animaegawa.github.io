@@ -3,6 +3,7 @@ layout: post
 title: "群の拡大の分類"
 date: 2025-03-29
 keywords: ["分類空間", "拡大", "A_\\infty-群", "中心拡大"]
+comments: true
 lang: ja
 ---
 

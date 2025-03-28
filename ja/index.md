@@ -24,9 +24,10 @@ keywords: ["math", "数学", "前川拓海"]
 **Link:**
 - [無限圏日本語ノート1](../blog/oo-cat)
 <details><summary>その他数学関連のノート</summary>
+<br>
 <ul>
 <li><a href="../blog/ext">群の拡大がコホモロジカルであることの証明</a></li>
-<li></li>
+<li><a href="../blog/stable">安定ホモトピー論/安定∞-圏ノート</a></li>
 </ul>
 </details>
 
