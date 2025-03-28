@@ -1,27 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CD Test</title>
-  <script>
+  <title>MathJax Macro + CD Test</title>
+
+  <script type="text/javascript">
     window.MathJax = {
+      loader: {
+        load: ['[custom]/xypic.js'],
+        paths: {custom: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@3.0.1/build/'}
+      },
       tex: {
-        displayMath: [['\\[', '\\]']],
+        //packages: ['base', 'ams', 'amscd', 'newcommand'],
+        packages: {'[+]': ['xypic']},
         macros: {
-          o: ["{\\operatorname{#1}}", 1],
-          C: ["{\\mathsf{#1}}", 1]
-        }
-        // ✅ ここに "packages" は書かないこと！
+          c: ["\\mathcal{#1}", 1],
+          C: ["\\mathsf{#1}", 1]
+        },
+        displayMath: [['\\[', '\\]']],
+        inlineMath: [['\\(', '\\)']]
       }
     };
   </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml-full.js"></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@master/xypic.js"></script>
 </head>
 <body>
 
-<p>テスト：CD環境を表示</p>
-
+<h2>CD環境</h2>
 \[
 \begin{CD}
 N @>>> G \\
@@ -30,7 +38,149 @@ N @>>> G \\
 \end{CD}
 \]
 
-<p>上の図は CD で書かれています。</p>
+\[\xymatrix{
+  A \ar[rd]|q \ar[r]^f \ar[d]_g & B \ar[d]^h \\
+  C \ar[r]_k & D
+  }
+\]
+
+\[\xymatrix{
+  A \ar@{->>}[rd] \ar@{^{(}->}[r]
+  &B \ar@{.>}[d]
+  &C \ar@{_{(}->}[l]\ar@{->>}[ld]\\
+  &D}
+\]
+
+\[
+\xymatrix{
+&A \ar[ldd]_f \ar[rd]|-{c} \ar[rrd]|-{d} \ar[rrrd]|-{e}\\
+&B \ar[ld] \ar[r] &C \ar[r] &D \ar[r] &E\\
+F}
+\] 
+
+\[\xymatrix{A \ar@/^/[r] \ar@/_/[r] & B}
+\xymatrix{A \ar@/^/[r] \ar@/^1pc/[r] \ar@/^2pc/[r]& B}
+\xymatrix{A \ar@{->>}@/^/[r] & B}
+\]
+
+\[
+\xymatrix{
+T \ar@/_/[ddr]_y \ar@/^/[drr]^x \ar@{.>}[dr]|-{(x,y)}\\
+&X \times_Z Y \ar[d]^q \ar[r]_p & X\ar[d]_f \\
+&Y \ar[r]^g &Z}
+\]
+
+<h2>マクロ</h2>
+\[
+\c{A} \quad \C{Set}
+\]
+
+<h2>XyJax Samples</h2>
+
+<a href="https://sonoisa.github.io/xyjax-v3/xyjax-v3.html">source</a>
+
+\[\begin{xy}
+\xymatrix @C=4pc {
+  x \ar@(lu,ld) []_{id} \ar@/^/^f [r]
+& f(x) \ar@/^/^{f^{-1}} [l]
+}
+\end{xy}\]
+
+\[\begin{xy}
+0;<1em,0em>:
+(0,0);p+/v a(18) 3em/**@{.} ?>*@{>},
+(0,-1.5);p+/v a(18) 3em/**@{.} ?>*@{<},
+(0,-3);p+/v a(18) 3em/**@{.} ?>*@{|},
+(0,-4.5);p+/v a(18) 3em/**@{.} ?>*@{(},
+(0,-6);p+/v a(18) 3em/**@{.} ?>*@{)},
+
+(5,0);p+/v a(18) 3em/**@{.} ?>*@^{>},
+(5,-1.5);p+/v a(18) 3em/**@{.} ?>*@^{<},
+(5,-3);p+/v a(18) 3em/**@{.} ?>*@^{|},
+(5,-4.5);p+/v a(18) 3em/**@{.} ?>*@^{(},
+(5,-6);p+/v a(18) 3em/**@{.} ?>*@^{)},
+(5,-7.5);p+/v a(18) 3em/**@{.} ?>*@^{`},
+(5,-9);p+/v a(18) 3em/**@{.} ?>*@^{'},
+
+(10,0);p+/v a(18) 3em/**@{.} ?>*@_{>},
+(10,-1.5);p+/v a(18) 3em/**@{.} ?>*@_{<},
+(10,-3);p+/v a(18) 3em/**@{.} ?>*@_{|},
+(10,-4.5);p+/v a(18) 3em/**@{.} ?>*@_{(},
+(10,-6);p+/v a(18) 3em/**@{.} ?>*@_{)},
+(10,-7.5);p+/v a(18) 3em/**@{.} ?>*@_{`},
+(10,-9);p+/v a(18) 3em/**@{.} ?>*@_{'},
+
+(15,0);p+/v a(18) 3em/**@{} ?>*@2{>} **@2{.},
+(15,-1.5);p+/v a(18) 3em/**@{} ?>*@2{<} **@2{.},
+(15,-3);p+/v a(18) 3em/**@2{.} ?>*@2{|},
+
+(20,0);p+/v a(18) 3em/**@{} ?>*@3{>} **@3{.},,
+(20,-1.5);p+/v a(18) 3em/**@{} ?>*@3{<} **@3{.},,
+(20,-3);p+/v a(18) 3em/**@3{.} ?>*@3{|},
+
+(0,-13);p+/v a(18) 3em/**@{.} ?>*@{>>},
+(0,-14.5);p+/v a(18) 3em/**@{.} ?>*@{<<},
+(0,-16);p+/v a(18) 3em/**@{.} ?>*@{||},
+(0,-17.5);p+/v a(18) 3em/**@{.} ?>*@{|-},
+(0,-19);p+/v a(18) 3em/**@{.} ?>*@{>|},
+(0,-20.5);p+/v a(18) 3em/**@{.} ?>*@{+},
+
+(5,-13);p+/v a(18) 3em/**@{.} ?>*@^{>>},
+(5,-14.5);p+/v a(18) 3em/**@{.} ?>*@^{<<},
+(5,-16);p+/v a(18) 3em/**@{.} ?>*@^{||},
+(5,-17.5);p+/v a(18) 3em/**@{.} ?>*@^{|-},
+(5,-19);p+/v a(18) 3em/**@{.} ?>*@{>>|},
+(5,-20.5);p+/v a(18) 3em/**@{.} ?>*@{x},
+
+(10,-13);p+/v a(18) 3em/**@{.} ?>*@_{>>},
+(10,-14.5);p+/v a(18) 3em/**@{.} ?>*@_{<<},
+(10,-16);p+/v a(18) 3em/**@{.} ?>*@_{||},
+(10,-17.5);p+/v a(18) 3em/**@{.} ?>*@_{|-},
+(10,-19);p+/v a(18) 3em/**@{.} ?>*@{|<},
+(10,-20.5);p+/v a(18) 3em/**@{.} ?>*@{/},
+
+(15,-13);p+/v a(18) 3em/**@{} ?>*@2{>>} **@2{.},
+(15,-14.5);p+/v a(18) 3em/**@{} ?>*@2{<<} **@2{.},
+(15,-16);p+/v a(18) 3em/**@{.} ?>*@2{||},
+(15,-17.5);p+/v a(18) 3em/**@{.} ?>*@2{|-},
+(15,-19);p+/v a(18) 3em/**@{.} ?>*@{|<<},
+(15,-20.5);p+/v a(18) 3em/**@{.} ?>*@{//},
+
+(20,-13);p+/v a(18) 3em/**@{} ?>*@3{>>} **@3{.},
+(20,-14.5);p+/v a(18) 3em/**@{} ?>*@3{<<} **@3{.},
+(20,-16);p+/v a(18) 3em/**@{.} ?>*@3{||},
+(20,-17.5);p+/v a(18) 3em/**@{.} ?>*@3{|-},
+(20,-19);p+/v a(18) 3em/**@{.} ?>*@{*},
+(20,-20.5);p+/v a(18) 3em/**@{.} ?>*@{o},
+\end{xy}\]
+
+
+
+\[\newdir{ >}{{}*!/-3pt/@{>}}
+\begin{xy}
+0*+{A}="a", <5pc, 1pc>*+{B}="b"
+\ar @{>->} "a";"b" <2pt>
+\ar @{ >->} "a";"b" <-2pt>
+\end{xy}\]
+
+
+
+\[\begin{xy}
+\xymatrix {
+*\txt{start} \ar[r]
+ & *++[o][F-]{0} \ar@(r,u)[]^b \ar[r]_a
+ & *++[o][F-]{1} \ar[r]^b \ar@(r,d)[]_a
+ & *++[o][F-]{2} \ar[r]^b
+  \ar `dr_l[l] `_ur[l] _(.2)a[l]
+ & *++[o][F=]{3}
+  \ar `ur^l[lll] `^dr[lll]^b [lll]
+  \ar `dr_l[ll] `_ur[ll] [ll]
+}
+\end{xy}\]
+
+<h2>日本語解説ページ</h2>
+
+<a href="https://m-hiyama.hatenablog.com/entry/2021/01/03/120758">日本語解説ページ</a>
 
 </body>
 </html>

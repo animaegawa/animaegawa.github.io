@@ -1,6 +1,10 @@
 window.MathJax = {
+    loader: {
+      load: ['[custom]/xypic.js'],
+      paths: {custom: 'https://cdn.jsdelivr.net/gh/sonoisa/XyJax-v3@3.0.1/build/'}
+    },
   tex: {
-    //packages: ['base', 'amscd'], // ← amscd
+    packages: {'[+]': ['xypic']},
     displayMath: [['\\[', '\\]']],
     macros: {
       c: ["{\\mathcal{#1}}", 1],
@@ -15,10 +19,6 @@ window.MathJax = {
       // 
       oo: ["{\\infty}"],
       sslash: ["{\/\\!\/}"]
-    },
-    //packages: ['base', 'amscd']
-  },
-  loader: {
-    load: ['[tex]/amscd']
+    }
   }
 };

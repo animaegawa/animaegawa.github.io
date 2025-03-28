@@ -114,6 +114,17 @@ blockquote {
   margin-bottom: 0.5em;
 }
 
+.proof::after {
+  content: "∎";
+  font-style: normal;
+  font-weight: bold;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  font-size: 1.3em;
+  color: #444;
+}
+
 .example::before {
   content: "Example.";
   font-weight: bold;

@@ -12,7 +12,11 @@ lang: ja
 この分野の勉強法を聞かれることも少なくないのですが，正直返答に困りますし，他人に聞くようなことでもないと思います．それでも，日本語話者がこの分野を理解する際のハードルを少しでも下げることに，このノートがいくらかでも貢献できれば幸いです．
 
 ---
-**目次**
+<div style="text-align: right;">
+  <a href="../ja/">日本語Top</a> |
+  <a href="../">English</a>
+</div>
+<!--**目次**-->
 * Table of Contents
 {:toc}
 
@@ -80,7 +84,7 @@ quasicategoryやisofibrationの定義を理解する必要はないです．定�
 >
 - Nerve functor \\(N\colon \o{Cat}(\C{Set})\to \\C{sSet}\\)は \\(\C{qCat}\\)に値をとり，左随伴 \\(h\colon\C{qCat}\to\o{Cat}(\C{Set})\\)が存在する．
   - \\(h\colon\C{qCat}\to\o{Cat}(\C{Set})\\) は有限直積を保つ．
-  - 随伴の counit \\(\c{C} \to Nh\c{C}\\) はいつも isofibrationになる．
+  - 随伴の unit \\(\c{C} \to Nh\c{C}\\) はいつも isofibrationになる．
 - \\(\C{qCat}\subset\C{sSet}\\)は以下の操作で閉じる．
   - \\(A\in \C{sSet}\\)による power： \\(\o{Fun}(A,-)\colon\C{qCat} \to \C{qCat}\\)
   - 直積，coproduct
@@ -367,22 +371,28 @@ $$\C{Cat}$$
 <li> cocartesian fibration \(X \to A\) に対応する図式 \(A \to \C{Cat}\) は，\(a\in A\) をファイバー \(X_a = \{a\}\times_A X \in \C{qCat}\)に送る．
 </li>
 
-<li> \(\C{qCat}\) でのlax pullback \[\c{C} \times_{\c{B}} \o{Fun}(\Delta^1,\c{B}) \times_{\c{B}} \c{D}\] は \(\C{Cat}\) でも limitになる．
+<li> \(\C{qCat}\) でのlax pullback \[\c{C} \times_{\c{B}} \o{Fun}(\Delta^1,\c{B}) \times_{\c{B}} \c{D}\] は \(\C{Cat}\) でも limitになる<a><sup>a</sup></a>．
 </li>
 
 <li> cocartesian fibrationの，cocartesian global sectionのなす関手圏を考えると，それが対応する \(\C{Cat}\)の図式の極限を与える． </li>
 
-<li> cocartesian fibrationの全空間のcocartesian arrowを(Dwyer--Kan)局所化することで，対応する\(\C{Cat}\)の図式の余極限が得られる． </li>
+<li> cocartesian fibrationの全空間のcocartesian arrowを(Dwyer&ndash;Kan)局所化<a><sup>b</sup></a>することで，対応する\(\C{Cat}\)の図式の余極限が得られる． </li>
 </ul></div>{: .lemma}
+
+<div class="footnote-section">
+<a><sup>a</sup></a> より一般に，\(\C{qCat}\to\C{Cat}\)は，片方の矢印が isofibrationであるような図式の pullbackを保つ．
+<br>
+<a><sup>b</sup></a> See <a href="https://kerodon.net/tag/01MP">01MP</a>.
+</div>
 
 専門用語を並べ立ててしまいましたが，直積・lax pullbackや関手圏といったこれまで導入した記号が，それらを（\\(\C{qCat}\\)ではなく）\\(\C{Cat}\\)の中で考えたものと一致している，ということが一つ重要です．また，$$\C{Cat}$$が無限圏として極限や余極限をもつことを，このような方針で抽象的に証明することができます．
 
 $$\oo$$-圏の間の随伴は，quasicategoryの場合と同様に定義します．これは，$$\C{Cat}$$ の"homotopy 2-category"が，上で一度だけ用いた $$h_2\C{qCat}$$ と変わらないということから正当化することができます．
 
 <div id="unst">
-\(\C{Cat}\) の写像 \(p\colon \c{C}' \to \c{C}\) が <b>cocartesian fibration</b> であることを定義して，\(\oo\)-圏の同値
+\(\C{Cat}\) の写像 \(p\colon \c{C}' \to \c{C}\) が <b>cocartesian fibration</b> であることを同様に定義して，\(\oo\)-圏の同値
 \[ \C{Cat}_{/(-)}^{\r{cocart}} \simeq \o{Fun}(-, \C{Cat}) \]
-を与えることもできる．（左辺は\(\C{Cat}_{/(-)}\)の nonfull subcategory）
+を与えることもできる．（左辺は\(\C{Cat}_{/(-)}\)の nonfull subcategory．）左辺から右辺への関手はstraighteningと呼ばれる．
 </div>{: .remark}
 
 このように，$$\C{Cat}$$ の存在を保証する過程で導入した全ての概念を，$$\C{Cat}$$ の中で完結する言葉に全て書き直すために，色々な議論を二周させる必要があります．
@@ -397,7 +407,7 @@ $$\C{Cat}$$[<sup>3</sup>](#smallcats)における同型射を，やはり圏同�
 
 <div id="smallcats" class="footnote-section">
 <sup><a>3</a></sup>
-small \(\infty\)-圏全体のなす圏．
+small \(\infty\)-圏全体のなす(\(\infty\)-)圏．
 <br>
 <sup><a>4</a></sup>
 smallとは限らないlarge \(\infty\)-圏のなす(very large)圏 \(\Cat{Cat}\) の存在を仮定して，そこでの同型射として圏同値と言った方が良い．
@@ -405,6 +415,14 @@ smallとは限らないlarge \(\infty\)-圏のなす(very large)圏 \(\Cat{Cat}\
 
 
 注意点ですが，これ以降「一意」と言った場合，そのとき考えている対象のなす$$\oo$$-圏が一点と圏同値であるという意味になります．したがって，従来の集合論的な一意性よりもずっと強い意味の用語になってしまうわけですが，この分野の語法としてこれは標準的です．
+
+<div class="footnote-section">
+<b>その他コメント</b>
+<ul>
+<li> quasicategoryにおける(co)limitを<a href="#limits">定義しました</a>が，全く同様に\(\oo\)-圏における(余)極限を定義します．用語の注意としては，<b>diagram</b>はsmall (\(\oo\)-)圏からの関手を指し，(余)極限は（とくに断らない限り）<b>必ず <i>small</i> diagramの(co)limitのことを指します</b>．</li>
+<li> 以下では「各\(c\in\c{C}\)に対してある命題が成り立つ」という種類の主張が登場します．この言い回しについて，一言断っておくとよいのかもしれません<a><sup>5</sup></a>．とはいえ，実際には\(\pi_0(\c{C}^\simeq)\)という集合を用意すれば解決しますので，これ以上深入りしないことにします．<div class="footnote-section"><a><sup>5</sup></a>（というのも，圏は単体的集合ではないという立場をとるのならば「対象のなす集合」があるわけではないので，こういうことを気にする人がいるかもしれないと思いました．）</div> </li>
+</ul>
+</div>
 
 
 ### Right fibration/Straightening定理

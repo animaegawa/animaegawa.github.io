@@ -6,6 +6,16 @@ keywords: ["分類空間", "拡大", "A_\\infty-群", "中心拡大"]
 lang: ja
 ---
 
+以下の記事の内容を一部踏まえています：
+<ul>
+    <li><a href="/blog/oo-cat.html">∞-圏入門</a> </li>
+</ul>
+---
+<div style="text-align: right;">
+  <a href="../ja/">日本語Top</a> |
+  <a href="../">English</a>
+</div>
+
 
 ## 分類定理
 
@@ -87,8 +97,12 @@ anima \(X\) と点 \(x\in X\)
 に対し，based loop群 \(\Omega X\in \o{Grp}(\C{An})\)
 を次のチェック構成<a href="#note2"><sup>2</sup></a>で定義する．
 \[
-\{x\}^{\times_X[-]}\colon \qquad \{x\} \leftleftarrows \{x\} \times_X \{x\} \begin{array} \leftleftarrows\\ \leftarrow\end{array} \{x\} \times_X \{x\} \times_X \{x\} \cdots
-\]
+\{x\}^{\times_X[-]}\colon \; \xymatrix{
+   \{x\} \ar[r]
+ & \{x\}\times_X \{x\} \ar@<0.3em>[l] \ar@<-0.3em>[l] \ar@<0.3em>[r] \ar@<-0.3em>[r]
+ & \{x\}\times_X \{x\}\times_X\{x\} \ar[l] \ar@<0.6em>[l] \ar@<-0.6em>[l] \ar@{.}[r]
+ & 
+}\]
 </div>{: .construction}
 
 <div id="note2" class="footnote-section">
