@@ -90,7 +90,7 @@ lang: ja
 技術的に重要なことは，基点を付けても「切除」の概念が変化しないということです：
 
 <div class="lemma">
-\(c\in\c{C}\)に対し，関手\(\c{C}_{/c} \to \c{C}\)はweakly contractible colimitをcreateする．
+\(c\in\c{C}\)に対し，関手\(\c{C}_{/c} \to \c{C}\)はweakly contractible limitをcreateする．
 とくに，忘却
 \(\C{An}_\ast = \cat{An}_{\ast/} \to \cat{An}\)
 はpushoutを保つ．
