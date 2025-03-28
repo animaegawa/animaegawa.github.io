@@ -637,7 +637,7 @@ full subcategory \\(\c{D}'\subset \c{D}\\)に対して，以下同値
 (4)$$\Rightarrow$$(1)のみ非自明です．ポイントは，\\[p\colon \c{C}\vec{\times}_\c{D} \c{D} \to \c{D}\\] がcocartesian fibrationであり，各ファイバーが終対象をもつということです．次のLemmaに帰着されます．
 
 >
-\\(p\colon E \to B\\)を，quasicategoryのcocartesian fibrationであって，各ファイバー \\(E_x\\) が終対象をもつとき，\\(p\\)の切断 \\(i\\)であって，各\\(i(x)\in E_x\\)がterminal objectであるようなものが存在する．
+\\(p\colon E \to B\\)を，quasicategoryのcocartesian fibrationであって，各ファイバー \\(E_x\\) が終対象をもつとするとき，\\(p\\)の切断 \\(i\\)であって，各\\(i(x)\in E_x\\)がterminal objectであるようなものが存在する．
 さらに，このような \\(i\\)は \\(p\\)の右随伴になる．
 {: .lemma}
 
