@@ -24,6 +24,7 @@ lang: ja
 
 ### 記号
 
+- 圏 $$\colon$$ $$\infty$$-圏
 - ハイフン $$(-)\colon$$ 関手性
 - 下付き $$\bullet$$ $$\colon$$ simplicial関手性または導来圏の対象
 - $$\ast$$ $$\colon$$ $$\bb{Z}$$-次数付け
@@ -33,6 +34,8 @@ lang: ja
 - $$\C{Cat}$$, $$\Cat{Cat}$$ $$\colon$$ 小圏と圏
 - $$\C{Pr}^\r{L}$$ $$\colon$$ 表示可能圏
 - $$(\C{Pr}^\r{L}, \otimes, \C{An})$$ $$\colon$$ 表示可能圏のなす対称モノイダル圏
+- $$\o{Alg}(\c{C})$$ $$\colon$$ algebra objects
+- $$\o{CAlg}(\c{C})$$ $$\colon$$ commutative algebra objects
 
 
 ## Introduction
@@ -94,7 +97,7 @@ lang: ja
 </div>
 
 <div class="definition">
-<b>ホモロジー理論</b><sup><a>2</a></sup>とは，\(\cat{An}_\ast^\r{fin}\)からの（\(\cat{An}\)への<sup><a>3</a></sup>）reduced<sup><a>4</a></sup>関手であって，余カルテシアン図式をカルテシアン図式に写すものである．
+<b>ホモロジー理論</b><sup><a>2</a></sup>とは，\(\cat{An}_\ast^\r{fin}\)からの（\(\cat{An}\)への<sup><a>3</a></sup>）reduced<sup><a>4</a></sup>関手であって，余カルテシアン図式をカルテシアン図式に写す<sup><a>5</a></sup>ものである．
 </div>
 
 <div class="footnote-section">
@@ -106,6 +109,9 @@ lang: ja
 <br>
 <sup><a>4</a></sup>
 始対象を終対象に送る．
+<br>
+<sup><a>5</a></sup>
+切除/excision
 </div>
 
 
@@ -194,9 +200,37 @@ lang: ja
 
 ## Idempotent algebras
 
+\\((\c{C},\otimes, \b{1})\\) は対称<sup><a>a</a></sup>モノイダル圏．
+
+<div class="footnote-section">
+<sup><a>a</a></sup>
+対称性は実は必要ない．
+</div>
+
+<div class="definition">
+\(\bb{E}_0\)-algebra \(\b{1}\to A \in\c{C}\)
+が <b>idempotent algebra</b>
+であるとは，写像
+\[A = \b{1} \otimes A \to A \otimes A\]
+が同型であることとする．
+
+<ul><li>            
+\(\o{Alg}_{\bb{E}_0}^\r{idm}(\c{C}) \subset \c{C}_{\b{1}/}\)
+はfull subcategoryで定義する．
+</li><li>
+同様に full subcategory \(\o{CAlg}^\r{idm}(\c{C})\subset\o{CAlg}(\c{C})\) を定義する．
+</li></ul></div>
+
+<div class="theorem">
+忘却関手 \[\o{Alg}_{\bb{E}_0}^\r{idm}(\c{C})\xleftarrow{\qquad}\o{CAlg}^\r{idm}(\c{C})\]
+は圏同値．
+</div>
+
 
 
 ## Monoidal t-structures
+
+### smashing localization
 
 
 ## 💬
