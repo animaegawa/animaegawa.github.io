@@ -360,7 +360,7 @@ $$\C{Cat}$$
 <div><ul>
 <li> \(\C{qCat}\) での直積は，\(\C{Cat}\) での直積を与える．</li>
 
-<li> quasicategory \(\c{A}, \c{B}\) に対して，evaluation map \(\c{A}\times\o{Fun}(\c{A},\c{B}) \to \c{B}\) は，\(\C{Cat}\) の射として，<a href="#universality">couniversal</a> along \(\c{A}\times(-)\colon\C{Cat}\to\C{Cat}\)．とくに，\(\C{qCat}\)の internal homが \(\C{Cat}\)の internal homを与える．</li>
+<li> quasicategory \(\c{A}, \c{B}\) に対して，evaluation map \(\c{A}\times\o{Fun}(\c{A},\c{B}) \to \c{B}\) は，\(\C{Cat}\) の射として，<a href="#universality">universal</a> along \(\c{A}\times(-)\colon\C{Cat}\to\C{Cat}\)．とくに，\(\C{qCat}\)の internal homが \(\C{Cat}\)の internal homを与える．</li>
 
 <li> quasicategoryから\(\oo\)-圏を与える対応が，関手 \[\C{qCat} \to \C{Cat}\]に持ち上がり，post-compostion \[\o{Fun}(\C{Cat},\c{E}) \to \o{Fun}(\C{qCat}, \c{E})\]は一般にfully faithful．またその像は，\(\C{qCat}\)の圏同値を\(\c{E}\)の同型に送る関手全体のなすfull subcategoryに一致する．</li>
 
