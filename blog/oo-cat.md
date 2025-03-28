@@ -646,3 +646,6 @@ Full subcategory \\(E'\subset E\\)を，ファイバーの終対象で生成さ�
 したがって，\\(E'\hookrightarrow E\\) が左随伴を持つことを示せば良いです．これは，reflective localizationの基本定理[02FA](https://kerodon.net/tag/02FA)の適用で得られます．
 
 または，結論のみ述べるならば，\\(E \star_{E} E' \to \Delta^1\\) が cocartesian fibration になることがわかり，straighteningして左随伴関手 \\(L\colon E \to E'\\) を得る，と説明できます．
+
+
+## 💬 コメント欄 {#comments}
