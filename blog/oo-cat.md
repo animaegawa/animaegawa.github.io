@@ -12,7 +12,7 @@ lang: ja
 この分野の勉強法を聞かれることも少なくないのですが，正直返答に困りますし，他人に聞くようなことでもないと思います．それでも，日本語話者がこの分野を理解する際のハードルを少しでも下げることに，このノートがいくらかでも貢献できれば幸いです．
 
 ---
-
+**目次**
 * Table of Contents
 {:toc}
 
@@ -516,7 +516,12 @@ $$\c{C}$$ の **mapping space/anima** $$\o{Map}_\c{C}(-,-)$$ を，(dual) twiste
 に一致する．--->
 </div>{: .theorem}
 
-像は，**complete Segal anima**と呼ばれるものと一致します．特に，一般の$$(\oo,n)$$-圏が，complete Segal対象を取り続けることで定義することができます．
+像は，**complete Segal anima**と呼ばれるものと一致します．これにより，単なる代数的構造としてでない「圏」という概念を与えることができます．特に，一般の$$(\oo,n)$$-圏を，complete Segal対象を取り続けることで定義することができます．<br>
+ただし，当然ながらtruncatedな対象に対しては，この方法はあまりうまく機能しません：
+
+>
+complete Segal object in $$\cat{Set}$$ $$=$$ gaunt 1-category ([nlab](https://ncatlab.org/nlab/show/gaunt+category))
+{: .example}
 
 
 
