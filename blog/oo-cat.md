@@ -391,19 +391,28 @@ $$\oo$$-圏の間の随伴は，quasicategoryの場合と同様に定義しま�
 
 ## 圏論
 
-以降では，``\mathcal``は何も言わなければ $$\oo$$-圏とします．また，$$\oo$$-圏をたんに「圏」と言うこともあります．
+以降では，``\mathcal``は何も言わなければ $$\oo$$-圏とします．また，（smallとは限らない）$$\oo$$-圏をたんに「圏」と言うこともあります[\*\*\*\*](#small)．
 
-$$\C{Cat}$$ での同型射を，やはり圏同値と言います．
+$$\C{Cat}$$[<sup>3</sup>](#smallcats)における同型射を，やはり圏同値と言います[<sup>4</sup>](#smallcats)．
+
+<div id="smallcats" class="footnote-section">
+<sup><a>3</a></sup>
+small \(\infty\)-圏全体のなす圏．
+<br>
+<sup><a>4</a></sup>
+smallとは限らないlarge \(\infty\)-圏のなす(very large)圏 \(\Cat{Cat}\) の存在を仮定して，そこでの同型射として圏同値と言った方が良い．
+</div>
+
 
 注意点ですが，これ以降「一意」と言った場合，そのとき考えている対象のなす$$\oo$$-圏が一点と圏同値であるという意味になります．したがって，従来の集合論的な一意性よりもずっと強い意味の用語になってしまうわけですが，この分野の語法としてこれは標準的です．
 
 
-### Right fibration
+### Right fibration/Straightening定理
 
 >
-small $$\oo$$-圏
+small[\*\*\*\*](#small) $$\oo$$-圏
 $$X \in \C{Cat}$$
-が **anima** であるとは，
+が **anima** であるとは，関手
 $$ X \to \o{Fun}(\Delta^1, X) $$
 が圏同値であることとする．
 >
@@ -415,7 +424,7 @@ $$\C{Cat}$$
 
 アニマ（の圏）の意味・イメージには，
 - $$\C{Set}$$ の非アーベル導来圏
-- 一点の free colimit completion
+- 一点の free colimit completion（[Yoneda](#米田定理)）
 - Postnikov towersのなす圏
 
 などさまざまな捉え方がありますが，ここでは詳しく触れません．
@@ -466,17 +475,18 @@ right fibrationのglobal sectionのなすanimaが，前層の極限を計算す�
 >
 $$\c{C}$$ の **mapping space/anima** $$\o{Map}_\c{C}(-,-)$$ を，(dual) twisted arrow category $$\o{Tw}(\c{C})$$ に対応する関手
 \\[ \c{C}^\r{op} \times \c{C} \to \Cat{An} \\]
-として与える[*](#large)．
+として与える[<sup>0</sup>](#large)．
 {: .definition}
 
 <div class="footnote-section" id="large">
-[<a href="#large">*</a>]
+[<sup><a href="#large">0</a></sup>]
 \(\C{Cat}\) や \(\C{An}\) がそれぞれ small oo-圏/anima のなす圏であるのに対し，smallとは限らないものからなる圏 \(\Cat{Cat}, \Cat{An}\) などをあらかじめ用意しておくと良い．
 
 私の記号では，\(\cat{Cat}, \cat{An}\)の対象は必ずsmallなもののみとしている．
 </div>
 
-<div class="footnote-section">
+<div class="footnote-section" id="small">
+[<a href="#small">****</a>]
 たんに(\(\oo\)-)圏と言った場合，smallは課さないことは多いが，anima と言う時には smallが課されることがほとんどである．
 </div>
 
@@ -568,7 +578,7 @@ I \hookrightarrow J \vec{\times}_J I \xrightarrow{p} J
 {: .corollary}
 
 
-### Yoneda theorems
+### 米田定理
 
 前層 \\(\o{Map}(-,c)\\) を \\(y(c)\\)と書きます．
 また，\\(\o{Fun}^\r{L}(-,-)\\)で，余極限を保つ関手全体で生成される\\(\o{Fun}(-,-)\\)のfull subcategoryを表します．
