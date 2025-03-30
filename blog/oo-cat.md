@@ -340,15 +340,7 @@ $$\C{Cat}$$ の対象や矢印は，quasicategory とその間の関手に対応
 $$\C{Cat}$$
 のオブジェクトを，**$$\oo$$-圏**と呼びます．定理から，quasicategory が $$\oo$$-圏の例を与え，本質的にそれで全て尽くされるということになるので，二つの用語の違いは強調されないことが多いです．
 
-しかしこの段階だと，
-$$\C{Cat}$$
-は
-"quasicategory of oo-categories"
-であって
-"oo-category of oo-categories"
-ではない気がします．が，対応する「oo-cat of oo-cats」も同じ記号 $$\C{Cat}$$ で書いてしまうことにします．
 
-また，1-圏のnerveで表されるquasicategory に対応する$$\oo$$-圏を，nerveの記号を書かないで表します．
 
 いくつかの基本的な性質を述べます．
 
@@ -366,7 +358,7 @@ $$\C{Cat}$$
 
 <li> quasicategory \(\c{A}, \c{B}\) に対して，evaluation map \(\c{A}\times\o{Fun}(\c{A},\c{B}) \to \c{B}\) は，\(\C{Cat}\) の射として，<a href="#universality">universal</a> along \(\c{A}\times(-)\colon\C{Cat}\to\C{Cat}\)．とくに，\(\C{qCat}\)の internal homが \(\C{Cat}\)の internal homを与える．</li>
 
-<li> quasicategoryから\(\oo\)-圏を与える対応が，関手 \[\C{qCat} \to \C{Cat}\]に持ち上がり，post-compostion \[\o{Fun}(\C{Cat},\c{E}) \to \o{Fun}(\C{qCat}, \c{E})\]は一般にfully faithful．またその像は，\(\C{qCat}\)の圏同値を\(\c{E}\)の同型に送る関手全体のなすfull subcategoryに一致する．</li>
+<li> quasicategoryから\(\oo\)-圏を与える対応が，関手 \[N(\C{qCat}) \to \C{Cat}\]に持ち上がり，pre-compostion \[\o{Fun}(\C{Cat},\c{E}) \to \o{Fun}(N(\C{qCat}), \c{E})\]は一般にfully faithful．またその像は，\(N(\C{qCat})\)の圏同値を\(\c{E}\)の同型に送る関手全体のなすfull subcategoryに一致する．</li>
 
 <li> cocartesian fibration \(X \to A\) に対応する図式 \(A \to \C{Cat}\) は，\(a\in A\) をファイバー \(X_a = \{a\}\times_A X \in \C{qCat}\)に送る．
 </li>
@@ -387,7 +379,15 @@ $$\C{Cat}$$
 
 専門用語を並べ立ててしまいましたが，直積・lax pullbackや関手圏といったこれまで導入した記号が，それらを（\\(\C{qCat}\\)ではなく）\\(\C{Cat}\\)の中で考えたものと一致している，ということが一つ重要です．また，$$\C{Cat}$$が無限圏として極限や余極限をもつことを，このような方針で抽象的に証明することができます．
 
-$$\oo$$-圏の間の随伴は，quasicategoryの場合と同様に定義します．これは，$$\C{Cat}$$ の"homotopy 2-category"が，上で一度だけ用いた $$h_2\C{qCat}$$ と変わらないということから正当化することができます．
+さて，この段階だと，
+$$\C{Cat}$$
+は
+"quasicategory of oo-categories"
+であって
+"oo-category of oo-categories"
+ではない気がします．が，対応する「oo-cat of oo-cats」も以降では同じ記号 $$\C{Cat}$$ で書いてしまうことにします．
+
+$$\oo$$-圏の間の（圏同値や）随伴は，quasicategoryの場合と同様に定義します．これは，$$\C{Cat}$$ の"homotopy 2-category"が，上で一度だけ用いた $$h_2\C{qCat}$$ と変わらないということから正当化することができます．
 
 <div id="unst">
 \(\C{Cat}\) の写像 \(p\colon \c{C}' \to \c{C}\) が <b>cocartesian fibration</b> であることを同様に定義して，\(\oo\)-圏の同値
@@ -402,6 +402,9 @@ $$\oo$$-圏の間の随伴は，quasicategoryの場合と同様に定義しま�
 ## 圏論
 
 以降では，``\mathcal``は何も言わなければ $$\oo$$-圏とします．また，（smallとは限らない）$$\oo$$-圏をたんに「圏」と言うこともあります[\*\*\*\*](#small)．
+
+
+また，1-圏のnerveで表されるquasicategory に対応する$$\oo$$-圏を，nerveの記号を書かないで表します．
 
 $$\C{Cat}$$[<sup>3</sup>](#smallcats)における同型射を，やはり圏同値と言います[<sup>4</sup>](#smallcats)．
 
