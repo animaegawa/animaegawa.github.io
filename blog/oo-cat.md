@@ -116,7 +116,7 @@ quasicategoryやisofibrationの定義を理解する必要はないです．定�
 <div>
 ファイバー積をとる関手
 \[
-\left\{\begin{CD} @.  \bullet \\ @. @V\t{isofib}VV \\ \bullet @>>> \bullet \end{CD} \quad \t{(in }\C{qCat}\t{)}\right\} \subset \o{Fun}(\{\cdot\to\cdot\leftarrow\cdot\}, \C{qCat}) \xrightarrow[\qquad\qquad]{\o{lim}} \C{qCat}
+\left\{\begin{CD} @.  \bullet \\ @. @V\t{isofib}VV \\ \bullet @>>> \bullet \end{CD} \quad \t{(in }\C{qCat}\t{)}\right\} \xrightarrow[\qquad\qquad]{\o{lim}} \C{qCat}
 \]
 は圏同値からなる自然変換を圏同値に送る．
 </div>
