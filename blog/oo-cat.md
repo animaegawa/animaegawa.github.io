@@ -5,6 +5,7 @@ date: 2025-03-26
 keywords: ["∞-圏", "\\infty-圏", "cocartesian fibration", "アニマ"]
 comments: true
 lang: ja
+last_modified: 2025-03-31
 ---
 
 ある方に勧められて日本語の記事を書いておくことにしました．
@@ -108,7 +109,8 @@ quasicategoryやisofibrationの定義を理解する必要はないです．定�
 - **右随伴関手**なども同様．
 {: .definition}
 
-しばらくの目標としては，圏同値 \\(f\\) の逆関手 \\(f^{-1}\\) が強い意味で一意であること，また，一般に \\(f\\) から(partialで良い)右随伴 \\(f^\r{R}\\) の構成が強い意味で canonical であること，を理解するというものになると思います．米田的な原理が存在するということだと言い換えても良いです．
+しばらくの目標としては，圏同値 \\(f\\) の逆関手 \\(f^{-1}\\) が強い意味で一意であること，また，一般に \\(f\\) から(partialで良い)右随伴 \\(f^\r{R}\\) の構成が強い意味で canonical であること，を理解するというものになると思います．米田的な原理が存在するということだと言い換えても良いです．<br>
+つまり，この定義のみでは「随伴関手」やその存在性が，圏に内在する言葉------すなわち対象と射の言葉------によって記述可能かどうかが非自明です．このポストの最後では，このような随伴の存在の内在的な言い換えを定式化し，その証明について説明することを試みます．
 
 
 色々な構成が圏同値不変になるということが，(quasicategoryのレベルでは)重要になります．たとえば，quasicategoryからなる図式 \\(\bullet\to\bullet\leftarrow\bullet\\)は片方がisofibrationであればpullbackもquasicategoryになるわけですが，この場合さらに圏同値不変になります：
@@ -140,7 +142,7 @@ quasicategoryやisofibrationの定義を理解する必要はないです．定�
 ### Fully faithful
 
 >
-- \\(x,y\in\c{C}\\)に対し，$$\o{Map}(x,y):= \{x\}\vec{\times}_\c{C}\{y\}$$ は Kan complexになる．
+- \\(x,y\in\c{C}\\)に対し，$$\o{Map}(x,y):= \{x\}\vec{\times}_\c{C}\{y\}$$ は Kan complex------とくにquasicategory------になる．
 - 関手 $$f\colon \c{C} \to \c{D}$$ に対して以下が同値．
   - $$f$$ が圏同値．
   - $$f$$ が essentially surjective[*](#note1) かつ fully faithfull[**](#note2)．
@@ -178,6 +180,22 @@ full subの重要例として，localizationというクラスがあります．
 {: .definition}
 
 
+### 終対象・始対象
+
+さまざまな普遍性の定義がこの構成に帰着されるという点で，terminal/initial対象は非常に基本的な概念です．
+
+<div class="definition">
+対象 \(x\in \c{C}\) が<b>終対象</b>であるとは，任意の \(c\in\c{C}\) に対し，
+\(\o{Map}(c,x)\)
+が一点と圏同値であることとして定義する．
+</div>
+
+次の観察は，「普遍性をもつ対象は，存在する限り（無限圏的な意味で）一意に定まる」という事実を反映するものになります．
+
+<div class="corollary">
+\(\c{C}_{\t{term}} \subset \c{C}\)
+を，終対象らが生成する full subcategory とするとき，\(\c{C}_{\t{term}}\) は空でないならば一点と圏同値．
+</div>
 
 
 ### Cartesian fibration

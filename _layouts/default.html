@@ -24,6 +24,14 @@
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
+
+        {% if page.layout == "post" %}
+          <p class="post-meta">
+            {% if page.last_modified %}
+              最終更新：{{ page.last_modified | date: "%b %-d, %Y" }}
+            {% endif %}
+          </p>
+        {% endif %}
         {{ content }}
 
         {% if page.comments %}

@@ -8,6 +8,7 @@ lang: ja
 
 日本語記事
 
+- [stable](stable)
 - [Group extensions](ext)
 - [\\(\infty\\)-圏のノート1](oo-cat)
 - 
