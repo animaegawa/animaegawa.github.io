@@ -198,8 +198,8 @@ full subの重要例として，localizationというクラスがあります．
 </div>
 
 
-### Cartesian fibration
 
+### Cartesian fibration
 
 随伴を定義した直後に，「\\(f^\r{R}\\) の構成がカノニカル」というスポをしました．この事実の証明に，cocartesian fibration という概念を使います．つまり，「各点」的な universal property を，「関手的な一意性」に持ち上げるテクニックが，全てこの節に集約されています．
 
@@ -221,6 +221,8 @@ full subの重要例として，localizationというクラスがあります．
 \(\c{C}_{f/} \to \c{C}_{x/}\times_{\c{D}_{px/}} \c{D}_{pf/}\)
 が圏同値であるときを言う．
 </div>{: .definition}
+
+たとえば，\\(\c{D}\\) が一点の場合，\\(p\\)-cocartesian arrowと\\(\c{C}\\)の同型射は一対一に対応します．
 
 >
 $$\c{D}$$ がquasicategoryであることを仮定しない場合の定義 [01TF](https://kerodon.net/tag/01TF) もあり，あった方が便利かもしれない．
@@ -281,8 +283,13 @@ $$F_a \colon \Delta^1 \to \c{C}$$
 
 を言っています．さらに二番目の主張である圏同値は，cocartesian lift がどの意味で「一意」であるのかを明確に概念化しています．
 
+\\(\c{D}\\)が一点の場合，次の <b>univalence</b> を与えます．
+<div class="example">
+\(\{\t{isomorphisms in }\c{C}\} \simeq \c{C}\)．
+</div>
+
 >
-逆にこの特徴を cocartesian fibration の定義に採用することもできる．
+逆にこのLemmaの特徴を cocartesian fibration の定義に採用することもできる．
 {: .remark}
 
 
@@ -664,11 +671,11 @@ full subcategory \\(\c{D}'\subset \c{D}\\)に対して，以下同値
 が同型であることとする．
 {: .definition}
 
-例えば，随伴のデータ \\(\varepsilon \colon FG \to \r{id}\\)が与えられているとき，各 \\(\varepsilon\colon FG(y) \to y\\)はuniversalです．逆に，各点の普遍射から随伴のデータを構成できるか，というのが圏論の基本的な役割でした．
+例えば，随伴のデータ \\(\varepsilon \colon FG \to \r{id}\\)が与えられているとき，各 \\(\varepsilon\colon FG(y) \to y\\)はuniversalです．逆に，各点の普遍射から随伴のデータを構成できるか，というのが圏論の基本的な役割です．
 
 二つのuniversal arrow \\(F(x), F(x') \to y\\)があるとき，それらの間の同型 \\(x\cong x'\\)の存在が容易にわかります．1-圏の場合，この考察から直ちに随伴関手の存在を説得することができました．
 
-無限圏ではこのような実験的な一意性の議論では，随伴の関手性に辿り着けないどころか，真の意味での一意性に程遠いという問題がありました．しかし米田の定理を使えば，無限圏においても随伴の関手性を導出することができます．
+無限圏ではこのような実験的な一意性の議論では，随伴の関手性に辿り着けないどころか，真の意味での一意性に程遠いという問題があります．しかし米田の定理を使えば，無限圏においても随伴の関手性を導出することができます．
 
 >
 \\(F\colon\c{C}\to\c{D}\\)に対し，以下が同値．

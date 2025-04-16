@@ -18,7 +18,8 @@ window.MathJax = {
       Cat: ["{\\widehat{\\mathsf{#1}}}",1],
       // 
       oo: ["{\\infty}"],
-      sslash: ["{\/\\!\/}"]
+      sslash: ["{\/\\!\/}"],
+      colim: ["{\\operatorname{colim}}"]
     }
   }
 };

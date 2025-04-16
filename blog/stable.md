@@ -17,7 +17,7 @@ lang: ja
   <a href="../ja/">日本語Top</a> |
   <a href="../">English</a>
 </div>
-
+<b>目次</b>
 * 
 {:toc}
 
@@ -32,6 +32,7 @@ lang: ja
 - $$\C{An}$$ $$\colon$$ アニマ
 - $$\C{An}^\r{fin}$$ $$\colon$$ アニマの圏の(full)部分圏であって，（\\(\ast\in\cat{An}\\)を含み）finite colimitで閉じているもののうち最小のもの
 - $$\C{Cat}$$, $$\Cat{Cat}$$ $$\colon$$ 小圏と圏
+- $$(-)^\simeq \colon \C{Cat} \to \C{An}$$ $$\colon$$ full埋め込み $$\cat{An} \hookrightarrow \cat{Cat}$$ の右随伴関手
 - $$\C{Pr}^\r{L}$$ $$\colon$$ 表示可能圏
 - $$(\C{Pr}^\r{L}, \otimes, \C{An})$$ $$\colon$$ 表示可能圏のなす対称モノイダル圏
 - $$\o{Alg}(\c{C})$$ $$\colon$$ algebra objects
@@ -123,6 +124,21 @@ lang: ja
 \[ \C{Sp} \coloneqq \o{Fun}^{\r{red, exci}}(\C{An}_\ast^\r{fin}, \C{An})\]
 </div>
 
+<div class="lemma">
+<ul>
+<li>
+\(\C{Sp} \coloneqq \o{Fun}^{\r{red, exci}}(\C{An}_\ast^\r{fin}, \C{An})\) は presentable である．
+</li>
+<li>
+関手
+\[ \o{Fun}^{\r{red, exci}}(\C{An}_\ast^\r{fin}, \C{An}) \xrightarrow{\o{ev}_{\ast \to S^0}} \C{An}_\ast \]
+は極限を保ち，左随伴
+\(\Sigma^\oo \colon \C{An}_\ast \to \C{Sp} \)
+をもつ．
+</li>
+</ul>
+</div>
+
 
 ## 基本定理
 
@@ -142,7 +158,7 @@ lang: ja
 </li>
 <li> 関手 \(\Sigma^\infty_+\colon \C{An} \to \C{Sp}\) は \(\cat{Pr^\r{L}}\)のidempotent \(\bb{E}_0\)-algebraになる．とくに，\(\Sigma^\infty_+\colon \C{An} \to \C{Sp}\)を対称モノイダルに持ち上げるような \(\C{Sp}\)へのpresentably symmetric monoidal構造が一意に存在する．
 </li>
-<li> \(\C{Sp}_{\ge0} \subset \C{Sp}\)を，colimitに関して\(\bb{S}\)で生成される部分圏とするとき，これがモノイダル t-構造を与える．とくに，\(\bb{S}\in\C{Sp}_{\ge0}\)かつ，\(\C{Sp}_{\ge0}\otimes\C{Sp}_{\ge0}\)が \(\C{Sp}_{\ge0}\)に含まれる．
+<li> \(\C{Sp}_{\ge0} \subset \C{Sp}\)を，colimitに関して\(\bb{S}\)で生成される部分圏とするとき，これがモノイダル accessible t-構造を与える．<br>とくに，\(\tau_{\ge0} \colon \C{Sp} \to \C{Sp}_{\ge0}\)はfiltered colimitを保ち，\(\bb{S}\in\C{Sp}_{\ge0}\)かつ，\(\C{Sp}_{\ge0}\otimes\C{Sp}_{\ge0}\)が \(\C{Sp}_{\ge0}\)に含まれる．
 </li>
 <li> 任意のfinite animaが，\(\C{Sp}\)-ambidextrousになる．任意の有限(余)極限が，\(\C{Sp}\)上 absoluteになる．
 </li>
@@ -200,11 +216,11 @@ lang: ja
 
 ## Idempotent algebras
 
-\\((\c{C},\otimes, \b{1})\\) は対称<sup><a>a</a></sup>モノイダル圏．
+以下，\\((\c{C},\otimes, \b{1})\\) は対称<sup><a>a</a></sup>モノイダル圏．
 
 <div class="footnote-section">
 <sup><a>a</a></sup>
-対称性は実は必要ない．
+対称性を必要としない変種も存在する．
 </div>
 
 <div class="definition">
@@ -219,18 +235,30 @@ lang: ja
 はfull subcategoryで定義する．
 </li><li>
 同様に full subcategory \(\o{CAlg}^\r{idm}(\c{C})\subset\o{CAlg}(\c{C})\) を定義する．
-</li></ul></div>
+</li></ul>
+</div>
 
 <div class="theorem">
 忘却関手 \[\o{Alg}_{\bb{E}_0}^\r{idm}(\c{C})\xleftarrow{\qquad}\o{CAlg}^\r{idm}(\c{C})\]
 は圏同値．
+<br><br>
+また，idempotent algebra \(A\) に対し，忘却 \(\o{Mod}_A(\c{C}) \to \c{C}\) は fully faithful かつ，essential image は以下に一致する． \[\{X\in \c{C} \mid X\xrightarrow{\sim} X\otimes A\}\]
 </div>
 
+Stableなものが生成する full subcategory \\(\C{Pr}^\r{L}\_\r{st} \subset \C{Pr}^\r{L}\\)を考えます．関手 \\(\Sigma^\oo\_+ \; \colon \C{An} \to \C{Sp}\\) によって，\\(\C{Sp}\\) を \\(\C{Pr}^\r{L}\\) における \\(\bb{E}_0\\)-algebra とみなします．
 
+<div class="theorem">
+\(\C{Sp}\in \o{CAlg}^\r{idm} (\C{Pr}^\r{L})\)．
+</div>
+
+<div class="corollary">
+\(\C{Sp}\)は，関手 \(\Sigma^\oo_+\) を対称モノイダルにアップグレードさせるようにカノニカルな presentably symmetric monoidal structureをもつ．
+<br>
+さらに，\(\C{Mod}_{\C{Sp}} (\C{Pr}^\r{L}) = \C{Pr}^\r{L}_\r{st}\)．
+</div>
 
 ## Monoidal t-structures
 
-### smashing localization
 
 
 ## 💬
