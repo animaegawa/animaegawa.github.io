@@ -11,6 +11,8 @@ lang: ja
 - [stable](stable)
 - [Group extensions](ext)
 - [\\(\infty\\)-圏のノート1](oo-cat)
+- [\\(\infty\\)-圏のノート2](pr)
+- [\\(\infty\\)-圏のノート3](operad)
 - 
 - [non-mathematics](misc)
 

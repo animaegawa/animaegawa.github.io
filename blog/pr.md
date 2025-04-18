@@ -94,7 +94,7 @@ Full subcategory は部分圏．
 repleteとは，quasicategoryのレベルでisofibrationであることを課す，というイメージです．
 </div>
 
-<div class="remark">
+<div class="example">
 <ul>
 <li>\(\{\text{Differentiable manifolds}\}\to \{\text{Topological manifolds}\}\)は，repelteでない<sup><a>*Milnor</a></sup>ため，部分圏ではない．</li>
 <li>\(\{\text{Compact Lie groups}\}\hookrightarrow \{\text{Compact topological groups}\}\)は，replete<sup><a>*?</a></sup>になり，我々の意味で部分圏になる．</li>

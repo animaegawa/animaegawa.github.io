@@ -185,7 +185,7 @@ cocartesian lifts \(\widetilde{\rho^i}\) の誘導する以下の四角が，カ
 圏 \\(\c{O}\\) は，underlying category of \\(\c{O}^\otimes\\) などと呼ばれます．
 
 <div class="example">
-\(\r{id}\colon \r{Fin}_\ast \to \r{Fin}_\ast\) はオペラッドである．これを \(\bb{E}_\infty^\otimes \in \C{Opd}\)と表す．
+\(\r{id}\colon \r{Fin}_\ast \to \r{Fin}_\ast\) はオペラッドである．これを \(\bb{E}_\infty^\otimes \in \C{Opd}\)と表す．圏 \(\C{Opd}\) のterminal objectを与えている．
 <br><br>
 1-圏 \(\bb{E}_1^\otimes \to \r{Fin}_\ast\) を，対象はpointed finite sets，そして\[\o{Map}_{\bb{E}_1^\otimes}(J_+, I_+) \coloneqq \coprod_{\phi\in\o{Hom}_\ast(J_+,I_+)} \prod_{i\in I} \{\t{orderings of } \phi^{-1}(i)\}\] で定義すると，オペラッドになる．
 </div>
@@ -222,6 +222,41 @@ cocartesian lifts \(\widetilde{\rho^i}\) の誘導する以下の四角が，カ
 </div>
 
 ### Module
+
+<div class="footnote-section">
+<b>参考文献</b>
+<br>
+Appendix A in Tony Annala, Ryomei Iwasa, <i>Motivic spectra and universality of K-theory</i>, <a href="https://arxiv.org/abs/2204.03434">arXiv:2204.03434v2</a>.
+</div>
+
+<div class="definition">
+圏 \(\bb{M}^\otimes\) を定義する．対象は，点付き有限集合と点付き部分集合の組 \(J_+ \supset T_+\) で，射は以下でさだめる．
+\[ \o{Map}_{\bb{M}^\otimes} (J_+ \supset T_+ , I_+ \supset S_+) \coloneqq \left\{ \phi \colon J_+ \to I_+ \t{ in } \r{Fin}_\ast \mid T \subset \phi^{-1}(S) \t{ and } T \xrightarrow[\phi]{\sim} S \right\} \]
+このとき，関手 \(\bb M^\otimes \to \r{Fin}_\ast\) はオペラッドになる．
+</div>
+
+underlying category \\(\bb M\\) はちょうど二つの対象をもつことに注意します．これにより，\\(\o{Alg}\_\bb{M} (\c{C})\\) の対象は，可換代数とその上の加群の組 \\((A,M)\\) であると考えることができます．
+
+<div class="remark">
+関手 \(I_+ \mapsto (I_+ \supset \ast)\) が，オペラッドの射 \(\bb{E}_\oo^\otimes \to \bb M^\otimes\) を与える．
+<br>
+対称モノイダル圏 \((\c{C},\otimes)\) に対して，\(\o{Alg}_\bb{M} (\c{C})\) を \(\o{Mod}(\c{C})\) と書く．とくに，関手 \(\o{Mod}(\c{C}) \to \o{CAlg}(\c{C})\) があり，\(A \in \o{CAlg}(\c{C})\) 上のファイバーは \(\o{Mod}_A(\c{C})\) と書かれる．
+</div>
+
+可換性を課さない変種として，\\(\phi\\) を \\(\bb{E}_1^\otimes\\) の射，そして各 \\(s\in S\\) に対し一点 \\(\phi^{-1}(s) \cap T\\) が \\(\phi^{-1}(s)\\) の最小元であることを課したものがあり，これもまたオペラッド \\(\bb{RM}^\otimes\\) を与えます．
+<br>
+ファイバーの順序を忘却する写像 \\(\bb{RM} \to \bb M^\otimes\\) があります．
+
+<div class="definition">
+\(\o{RMod}(\c{C}) \coloneqq \o{Alg}_{\bb{RM}}(\c{C})\)
+</div>
+
+基本的な結果として，可換代数の上の加群の構造は，結合性の構造のみにしか依らないというものがあります．
+
+<div class="theorem">
+以下がカルテシアン．
+\[\xymatrix{ \o{Mod}(\c{C}) \ar[d] \ar[r] & \o{RMod}(\c{C}) \ar[d] \\ \o{CAlg}(\c{C}) \ar[r] & \o{Alg}(\c{C}) }\]
+</div>
 
 ## Presentably symmetric monoidal
 

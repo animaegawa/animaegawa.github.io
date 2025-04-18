@@ -23,7 +23,9 @@ keywords: ["math", "数学", "前川拓海"]
 
 **Link:**
 - [無限圏日本語ノート1](../blog/oo-cat)
-<details><summary>その他数学関連のノート</summary>
+- [無限圏日本語ノート2](../blog/pr)
+- [無限圏日本語ノート3](../blog/operad)
+<details open><summary>その他数学関連のノート</summary>
 <br>
 <ul>
 <li><a href="../blog/ext">群の拡大がコホモロジカルであることの証明</a></li>
