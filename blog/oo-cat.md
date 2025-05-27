@@ -562,7 +562,7 @@ $$\c{C}$$ の **mapping space/anima** $$\o{Map}_\c{C}(-,-)$$ を，(dual) twiste
 に一致する．--->
 </div>{: .theorem}
 
-像は，**complete Segal anima**と呼ばれるものと一致します．これにより，単なる代数的構造としてでない「圏」という概念を与えることができます．特に，一般の$$(\oo,n)$$-圏を，complete Segal対象を取り続けることで定義することができます．<br>
+像は，**complete Segal anima**と呼ばれるものと一致します．これにより，単なる代数的構造としてでない「圏」という概念を与えることができます．特に，complete Segal対象を取り続けることで，double $$\infty$$-categoryなどを定義することができます．<br>
 ただし，当然ながらtruncatedな対象に対しては，この方法はあまりうまく機能しません：
 
 >

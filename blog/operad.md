@@ -245,7 +245,7 @@ underlying category \\(\bb M\\) はちょうど二つの対象をもつことに
 
 可換性を課さない変種として，\\(\phi\\) を \\(\bb{E}_1^\otimes\\) の射，そして各 \\(s\in S\\) に対し一点 \\(\phi^{-1}(s) \cap T\\) が \\(\phi^{-1}(s)\\) の最小元であることを課したものがあり，これもまたオペラッド \\(\bb{RM}^\otimes\\) を与えます．
 <br>
-ファイバーの順序を忘却する写像 \\(\bb{RM} \to \bb M^\otimes\\) があります．
+ファイバーの順序を忘却する写像 \\(\bb{RM}^\otimes \to \bb M^\otimes\\) があります．
 
 <div class="definition">
 \(\o{RMod}(\c{C}) \coloneqq \o{Alg}_{\bb{RM}}(\c{C})\)
