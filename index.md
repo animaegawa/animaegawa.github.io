@@ -6,7 +6,7 @@ lang: en
 keywords: ["math", "数学"]
 ---
 
-![photo](assets/photo.jpg){:style="max-width: 200px; border-radius: 50%;"}
+![photo](assets/photo_a.jpg){:style="max-width: 200px; border-radius: 50%;"}
 
 ### Contact
 - 📧 Email: tmaegawa [at] fuji.waseda.jp
