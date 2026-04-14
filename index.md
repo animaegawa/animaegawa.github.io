@@ -20,10 +20,10 @@ photo by Ko Aoki.
 
 ---
 
-I am a PhD student in mathematics based in Tokyo, working on homotopy theory.
+I am a mathematician at RIKEN Center for Interdisciplinary Theoretical and Mathematical Sciences (iTHEMS), working on homotopy theory. [link](https://ithems.riken.jp/en/members/takumi-maegawa)
 
 ### Education
-- *2023 - Present*, **Ph.D. Student**, Graduate School of Mathematical Sciences, The University of Tokyo                               
+- *2023 - 2026*, **Ph.D.**, Graduate School of Mathematical Sciences, The University of Tokyo                               
   Supervisor: Shane Kelly                       
   Research in homotopy theory, ∞-categories, and six-functor formalism.
 
