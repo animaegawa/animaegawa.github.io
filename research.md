@@ -5,7 +5,7 @@ permalink: /research/
 ---
 
 
-- *On the Bauer–Furuta Construction*, [arXiv:2412.16759](https://arxiv.org/abs/2412.16759), 2024.
+- *A six-functor formalism for sheaves over locally proper maps and the Bauer–Furuta Construction*, PhD Thesis, 2026. [PDF](assets/thesis.pdf) Older version available at [arXiv:2412.16759](https://arxiv.org/abs/2412.16759).
 
 - *Even-periodic Cohomology Theories for Twisted Parametrized Spectra*, Graduate School of Mathematical Sciences, the University of Tokyo, Master's Thesis, 2023.
 
