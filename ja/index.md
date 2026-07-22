@@ -17,8 +17,12 @@ keywords: ["math", "数学", "前川拓海"]
 ---
 [English version](/)
 
-                             
 
+                          
+
+
+**Event:**
+- [ゲシュタルトの勉強会](../GestaltWorkshop)
 
 
 **Link:**
